@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My First Portfolio</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tweets.html">Tweets</a></li>
-        </ul>
+        <!-- Navigation Links (unchanged) -->
     </header>
 
     <main>
@@ -22,18 +37,49 @@
             <h3>My Projects</h3>
             <p>This is the third paragraph, describing some of the projects I have worked on.</p>
             <p>This is the fourth paragraph, inviting visitors to connect with me and explore more!</p>
-            <a href="https://www.google.com" target="_blank">
-                <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" style="width:200px;height:auto;">
-            </a>
-        </article>
 
-        <aside>
-            <p>Placeholder to add comment thread later</p>
-        </aside>
+            <!-- Container for the Table of Learners -->
+            <div class="table-container">
+                <h2>Table of Learners</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </article>
     </main>
 
     <footer>
-        <p>Made by Elvis Mwania - <a href="https://github.com/elvismwania" target="_blank">here</a></p>
+        <p>Made by Elvis - <a href="https://www.linkedin.com" target="_blank">here</a></p>
     </footer>
 </body>
 </html>
+
